@@ -1,2 +1,3 @@
 # Data-Projects
-Veri bilimi alanıyla alakalı projelerimi yükleyeceğim repo.
+Veri bilimi, yapay zeka alanlarıyla alakalı projelerimi yükleyeceğim repo.
+
