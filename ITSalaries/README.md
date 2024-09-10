@@ -1,8 +1,8 @@
-Software Engineer Salaries UCB Algorithm Project
-Overview
+**Software Engineer Salaries UCB Algorithm Project** <br/>
+*Overview* <br/>
 This project applies a machine learning and data analysis workflow to a dataset containing software engineer salary information. The dataset includes features like the company score, job title, location, and salary range, among others. The goal is to predict suitable job listings based on company scores and salary estimates using the Upper Confidence Bound (UCB) algorithm, a well-known method in reinforcement learning.
 
-The following techniques were applied:
+*The following techniques were applied:* <br/>
 
 Data preprocessing (handling missing values, extracting salary ranges)
 Feature engineering (one-hot encoding for categorical features)
@@ -19,7 +19,7 @@ Project Workflow
 
 
 
-1. Data Preprocessing
+**1. Data Preprocessing** <br/>
 Loading and Inspecting the Dataset: The dataset is loaded into a pandas DataFrame. Missing values and data types are analyzed using the `isnull()` and dtypes functions.
 
 Salary Extraction: A custom function `extract_salary()` is used to extract the salary range and convert it into a numerical average. The salary strings (e.g., "$68K-$94K") are transformed into two new columns:
@@ -36,10 +36,10 @@ Data Normalization: The Company Score and Average Salary columns are normalized 
 
 
 
-2. Upper Confidence Bound (UCB) Algorithm
+**2. Upper Confidence Bound (UCB) Algorithm** <br/>
 The UCB algorithm is applied to recommend jobs by balancing exploration and exploitation. It selects the best job titles based on the rewards (combination of normalized salary and company score).
 
-UCB Steps:
+*UCB Steps:* <br/>
 Initialize the number of selections and sum of rewards for each job title.
 For each iteration, calculate the upper confidence bound for each job title. The UCB balances between:
 Jobs with a higher average reward (exploitation).
@@ -52,15 +52,15 @@ The reward is a combination of the Company Score and normalized Salary, with the
 
 
 
-3. Results
+**3. Results** <br/>
 The UCB algorithm is run on the training and test datasets. The results are stored in two separate DataFrames:
 
-train_results_df: Displays the selection count and total rewards for each job title during training.
-test_results_df: Displays the selection count and total rewards for each job title during testing.
+`train_results_df`: Displays the selection count and total rewards for each job title during training.
+`test_results_df`: Displays the selection count and total rewards for each job title during testing.
 
 
 
-4. Output
+**4. Output** <br/>
 The results of the UCB algorithm provide insight into:
 
 Which job titles are most recommended based on the highest combination of Company Score and Salary.
@@ -80,8 +80,8 @@ To run the script, use:
 `python script_name.py`
 Expected Output: The output will consist of two DataFrames:
 
-train_results_df: Shows the selection count and total reward for each job title during the training phase.
-test_results_df: Shows the selection count and total reward for each job title during the testing phase.
+`train_results_df`: Shows the selection count and total reward for each job title during the training phase.
+`test_results_df`: Shows the selection count and total reward for each job title during the testing phase.
 Conclusion
 This project demonstrates the application of the Upper Confidence Bound (UCB) algorithm to recommend jobs based on company scores and salary. The workflow also covers essential data preprocessing steps like handling missing values, one-hot encoding, and data normalization.
 
@@ -89,4 +89,5 @@ Future Improvements:
 Incorporating additional features, such as location or job posting date, could improve the recommendation system.
 Experimenting with different reinforcement learning algorithms like Thompson Sampling.
 
-
+**NOTE** </br>
+If you want to contribute to my project you can contact me
