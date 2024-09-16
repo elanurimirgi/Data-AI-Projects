@@ -1,3 +1,3 @@
 # Data-Projects
-Veri bilimi, yapay zeka alanlarıyla alakalı projelerimi yükleyeceğim repo.
+This repository was created for the purpose of uploading Data and Artificial Intelligence projects.
 
